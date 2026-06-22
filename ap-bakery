@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AP Bakery | Mandy's Food Blog</title>
+
+  <style>
+
+    :root {
+
+      --bg: #f7f4ef;
+
+      --paper: #ffffff;
+
+      --ink: #2b2b2b;
+
+      --muted: #6e6a63;
+
+      --accent: #ff7a45;
+
+      --line: #ece6de;
+
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      color: var(--ink);
+
+      background: linear-gradient(180deg, #fffaf6, var(--bg));
+
+    }
+
+    header.hero-header {
+
+      background: linear-gradient(90deg, var(--accent), #ffb190);
+
+      color: white;
+
+      padding: 34px 20px;
+
+      text-align: center;
+
+    }
+
+    nav.topnav {
+
+      position: sticky;
+
+      top: 0;
+
+      background: rgba(34,34,34,0.96);
+
+      padding: 12px 16px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 24px;
+
+    }
+
+    nav.topnav a {
+
+      text-decoration: none;
+
+      color: white;
+
+      font-weight: 600;
+
+    }
+
+    .container {
+
+      max-width: 1180px;
+
+      margin: 0 auto;
+
+      padding: 26px 16px 40px;
+
+    }
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns: 2.2fr 1fr;
+
+      gap: 24px;
+
+    }
+
+    @media (max-width: 900px) {
+
+      .grid { grid-template-columns: 1fr; }
+
+    }
+
+    .card, .sidebar {
+
+      background: white;
+
+      border: 1px solid var(--line);
+
+      border-radius: 18px;
+
+      box-shadow: var(--shadow);
+
+    }
+
+    .article { padding: 24px; }
+
+    .sidebar { padding: 22px; height: fit-content; }
+
+    .hero-img {
+
+      width: 100%;
+
+      border-radius: 16px;
+
+      margin: 14px 0 18px;
+
+      aspect-ratio: 16 / 9;
+
+      object-fit: cover;
+
+    }
+
+    .kicker {
+
+      display: inline-block;
+
+      background: #fff0ea;
+
+      color: #b34a1d;
+
+      border: 1px solid #ffd9c7;
+
+      border-radius: 999px;
+
+      padding: 6px 12px;
+
+      font-size: 0.85rem;
+
+      font-weight: 700;
+
+    }
+
+    h2 { margin: 12px 0 8px; font-size: 2rem; }
+
+    .lede { color: var(--muted); }
+
+    p { line-height: 1.75; }
+
+    .rating { color: #ff9b21; font-size: 1.1rem; }
+
+    .section { margin-top: 24px; padding-top: 10px; border-top: 1px solid var(--line); }
+
+    .gallery {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+      gap: 12px;
+
+      margin-top: 14px;
+
+    }
+
+    .gallery img {
+
+      width: 100%;
+
+      border-radius: 12px;
+
+      aspect-ratio: 4/3;
+
+      object-fit: cover;
+
+    }
+
+    .blog-links {
+
+      display: grid;
+
+      gap: 10px;
+
+      margin-top: 10px;
+
+    }
+
+    .blog-link {
+
+      display: block;
+
+      text-decoration: none;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      border: 1px solid var(--line);
+
+      background: #fcfbf9;
+
+    }
+
+    .blog-link strong { display: block; margin-bottom: 4px; }
+
+    .mini-note { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+
+    .note-box {
+
+      background: #fff8f4;
+
+      border: 1px solid #ffe0d1;
+
+      border-radius: 14px;
+
+      padding: 14px;
+
+      color: #72432e;
+
+    }
+
+    .back-home {
+
+      display: inline-block;
+
+      margin-top: 12px;
+
+      color: #9b4e26;
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 28px 16px 40px;
+
+      color: var(--muted);
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header class="hero-header">
+
+    <h1>Mandy’s Food Blog 🍽️</h1>
+
+    <p>Clickable café guides with photos and full blog pages</p>
+
+  </header>
+
+ 
+
+  <nav class="topnav">
+
+    <a href="index.html">Home</a>
+
+    <a href="jinius.html">Jinius</a>
+
+    <a href="ap-bakery.html">AP Bakery</a>
+
+    <a href="speedos-cafe.html">Speedos</a>
+
+    <a href="single-o.html">Single O</a>
+
+  </nav>
+
+ 
+
+  <div class="container">
+
+    <div class="grid">
+
+      <main class="card article">
+
+        <span class="kicker">Bakery + Coffee</span>
+
+        <h2>AP Bakery: The Kind of Bakery You Accidentally Fall in Love With 🥐☕</h2>
+
+        <p class="lede">Buttery pastries, beautiful bread, and a calm all-day energy that makes you want to stay longer than planned.</p>
+
+        <div class="rating">★★★★★</div>
+
+ 
+
+        <img class="hero-img" src="https://cdn.prod.website-files.com/64525fc51cfb988674213a6e/674d126c27cf408209e4a6ca_APBakery_CHawks_1286-2.jpg" alt="AP Bakery hero image">
+
+ 
+
+        <p>I stopped by AP Bakery on a sunny morning, and honestly, it felt like the kind of place you accidentally fall in love with. The smell alone—freshly baked bread and buttery pastries—pulled me in before I even had a chance to look at the menu.</p>
+
+ 
+
+        <p>I grabbed a seat by the window and started with their croissant, which turned out to be perfectly flaky with that delicate crunch on the outside. The layers practically melted once I took a bite.</p>
+
+ 
+
+        <p>I also tried a sourdough toast topped with ricotta and honey. It was simple, but everything tasted so fresh and balanced—the tangy bread with the creamy ricotta and just a hint of sweetness. I paired it with a flat white, which was smooth and strong, just the way I like it in the morning.</p>
+
+ 
+
+        <p>What stood out most was how relaxed the whole place felt. People were chatting quietly, some working on laptops, and others just enjoying their pastries without rushing. The staff were friendly and didn’t make me feel hurried even when it started getting busy.</p>
+
+ 
+
+        <p>If you’re into quality baked goods and a calm café vibe, AP Bakery is absolutely worth a visit. I left already thinking about what I’d try next time.</p>
+
+ 
+
+        <section class="section">
+
+          <h3>📸 Photo Highlights</h3>
+
+          <div class="gallery">
+
+            <img src="https://cdn.prod.website-files.com/644123c45081907d137fbe2d/67490e680e4696412161bbcd_APBakery_CHawks_0037.jpg" alt="AP Bakery photo 1">
+
+            <img src="https://www.broadsheet.com.au/_next/image?url=https:%2F%2Fcdn.broadsheet.com.au%2Fcache%2Ff2%2F81%2Ff281e95178dedad2171e0228d658eaac.jpg&w=2048&q=75" alt="AP Bakery photo 2">
+
+            <img src="https://cdn.broadsheet.com.au/cache/d5/b2/d5b2ec11425371f53cc73dd3b106da76.jpg" alt="AP Bakery photo 3">
+
+          </div>
+
+        </section>
+
+ 
+
+        <a class="back-home" href="index.html">← Back to all blogs</a>
+
+      </main>
+
+ 
+
+      <aside class="sidebar">
+
+        <h3>📍 Location</h3>
+
+        <p>Sydney</p>
+
+ 
+
+        <div class="note-box">
+
+          <strong>Why go:</strong>
+
+          <div class="mini-note" style="margin-top:8px; color:#72432e;">
+
+            Ideal for pastry people, coffee lovers, and anyone chasing a slower city breakfast with genuinely excellent baking.
+
+          </div>
+
+        </div>
+
+ 
+
+        <div class="section">
+
+          <h3>🔥 Read Next</h3>
+
+          <div class="blog-links">
+
+            <a class="blog-link" href="jinius.html">
+
+              <strong>Jinius Café</strong>
+
+              <span class="mini-note">Sun-soaked Dawes Point brunch with viral fig toast.</span>
+
+            </a>
+
+            <a class="blog-link" href="speedos-cafe.html">
+
+              <strong>Speedos Café</strong>
+
+              <span class="mini-note">Beachside brunch and Bondi-style slow living.</span>
+
+            </a>
+
+            <a class="blog-link" href="single-o.html">
+
+              <strong>Single O</strong>
+
+              <span class="mini-note">Serious coffee, smart brunch and buzzy Surry Hills vibes.</span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+ 
+
+  <footer>© 2026 Mandy Cao · Built as a mini multi-page food blog</footer>
+
+</body>
+
+</html>
