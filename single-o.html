@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Single O | Mandy's Food Blog</title>
+
+  <style>
+
+    :root {
+
+      --bg: #f7f4ef;
+
+      --paper: #ffffff;
+
+      --ink: #2b2b2b;
+
+      --muted: #6e6a63;
+
+      --accent: #ff7a45;
+
+      --line: #ece6de;
+
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      color: var(--ink);
+
+      background: linear-gradient(180deg, #fffaf6, var(--bg));
+
+    }
+
+    header.hero-header {
+
+      background: linear-gradient(90deg, var(--accent), #ffb190);
+
+      color: white;
+
+      padding: 34px 20px;
+
+      text-align: center;
+
+    }
+
+    nav.topnav {
+
+      position: sticky;
+
+      top: 0;
+
+      background: rgba(34,34,34,0.96);
+
+      padding: 12px 16px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 24px;
+
+    }
+
+    nav.topnav a {
+
+      text-decoration: none;
+
+      color: white;
+
+      font-weight: 600;
+
+    }
+
+    .container {
+
+      max-width: 1180px;
+
+      margin: 0 auto;
+
+      padding: 26px 16px 40px;
+
+    }
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns: 2.2fr 1fr;
+
+      gap: 24px;
+
+    }
+
+    @media (max-width: 900px) {
+
+      .grid { grid-template-columns: 1fr; }
+
+    }
+
+    .card, .sidebar {
+
+      background: white;
+
+      border: 1px solid var(--line);
+
+      border-radius: 18px;
+
+      box-shadow: var(--shadow);
+
+    }
+
+    .article { padding: 24px; }
+
+    .sidebar { padding: 22px; height: fit-content; }
+
+    .hero-img {
+
+      width: 100%;
+
+      border-radius: 16px;
+
+      margin: 14px 0 18px;
+
+      aspect-ratio: 16 / 9;
+
+      object-fit: cover;
+
+    }
+
+    .kicker {
+
+      display: inline-block;
+
+      background: #fff0ea;
+
+      color: #b34a1d;
+
+      border: 1px solid #ffd9c7;
+
+      border-radius: 999px;
+
+      padding: 6px 12px;
+
+      font-size: 0.85rem;
+
+      font-weight: 700;
+
+    }
+
+    h2 { margin: 12px 0 8px; font-size: 2rem; }
+
+    .lede { color: var(--muted); }
+
+    p { line-height: 1.75; }
+
+    .rating { color: #ff9b21; font-size: 1.1rem; }
+
+    .section { margin-top: 24px; padding-top: 10px; border-top: 1px solid var(--line); }
+
+    .gallery {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+      gap: 12px;
+
+      margin-top: 14px;
+
+    }
+
+    .gallery img {
+
+      width: 100%;
+
+      border-radius: 12px;
+
+      aspect-ratio: 4/3;
+
+      object-fit: cover;
+
+    }
+
+    .blog-links {
+
+      display: grid;
+
+      gap: 10px;
+
+      margin-top: 10px;
+
+    }
+
+    .blog-link {
+
+      display: block;
+
+      text-decoration: none;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      border: 1px solid var(--line);
+
+      background: #fcfbf9;
+
+    }
+
+    .blog-link strong { display: block; margin-bottom: 4px; }
+
+    .mini-note { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+
+    .note-box {
+
+      background: #fff8f4;
+
+      border: 1px solid #ffe0d1;
+
+      border-radius: 14px;
+
+      padding: 14px;
+
+      color: #72432e;
+
+    }
+
+    .back-home {
+
+      display: inline-block;
+
+      margin-top: 12px;
+
+      color: #9b4e26;
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 28px 16px 40px;
+
+      color: var(--muted);
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header class="hero-header">
+
+    <h1>Mandy’s Food Blog 🍽️</h1>
+
+    <p>Clickable café guides with photos and full blog pages</p>
+
+  </header>
+
+ 
+
+  <nav class="topnav">
+
+    <a href="index.html">Home</a>
+
+    <a href="jinius.html">Jinius</a>
+
+    <a href="ap-bakery.html">AP Bakery</a>
+
+    <a href="speedos-cafe.html">Speedos</a>
+
+    <a href="single-o.html">Single O</a>
+
+  </nav>
+
+ 
+
+  <div class="container">
+
+    <div class="grid">
+
+      <main class="card article">
+
+        <span class="kicker">Coffee Lover Pick</span>
+
+        <h2>Single O: For the People Who Really Care About Coffee ☕⚡</h2>
+
+        <p class="lede">A lively Surry Hills institution where serious coffee, thoughtful brunch and passionate staff all show up strong.</p>
+
+        <div class="rating">★★★★★</div>
+
+ 
+
+        <img class="hero-img" src="https://singleo.com.au/cdn/shop/files/Surry_Hills_Hero_583x.jpg?v=1690458055" alt="Single O hero image">
+
+ 
+
+        <p>I finally made it to Single O, and as someone who takes coffee seriously, I was curious to see if it lived up to the hype. Right away, I noticed the energy—busy, lively, and full of people who clearly know their coffee.</p>
+
+ 
+
+        <p>I ordered a filter brew to really taste what they’re about, and it didn’t disappoint. It was smooth, slightly fruity, and incredibly clean.</p>
+
+ 
+
+        <p>For food, I went with their breakfast plate featuring eggs, greens, and some house-made extras that added a bit of creativity to the dish. Everything felt thoughtful, not just thrown together for the sake of it. The portions were satisfying without being too heavy, which I appreciated.</p>
+
+ 
+
+        <p>What I liked most was how the staff seemed genuinely passionate. When I asked about the coffee, they explained it in a way that was informative but not overwhelming. It made the whole experience feel more personal.</p>
+
+ 
+
+        <p>The atmosphere is definitely on the buzzier side, so it’s not somewhere I’d go to sit quietly for hours, but it’s great if you want that vibrant café energy. If you care about good coffee and well-executed brunch, Single O is a must-visit.</p>
+
+ 
+
+        <section class="section">
+
+          <h3>📸 Photo Highlights</h3>
+
+          <div class="gallery">
+
+            <img src="https://media.timeout.com/images/105484763/1372/772/image.jpg" alt="Single O photo 1">
+
+            <img src="https://media.timeout.com/images/105484756/1024/576/image.jpg" alt="Single O photo 2">
+
+            <img src="https://media.timeout.com/images/105484772/1024/576/image.jpg" alt="Single O photo 3">
+
+          </div>
+
+        </section>
+
+ 
+
+        <a class="back-home" href="index.html">← Back to all blogs</a>
+
+      </main>
+
+ 
+
+      <aside class="sidebar">
+
+        <h3>📍 Location</h3>
+
+        <p>Surry Hills, Sydney</p>
+
+ 
+
+        <div class="note-box">
+
+          <strong>Why go:</strong>
+
+          <div class="mini-note" style="margin-top:8px; color:#72432e;">
+
+            Best for coffee-focused mornings, brunch with energy, and anyone who loves a café that feels genuinely alive.
+
+          </div>
+
+        </div>
+
+ 
+
+        <div class="section">
+
+          <h3>🔥 Read Next</h3>
+
+          <div class="blog-links">
+
+            <a class="blog-link" href="jinius.html">
+
+              <strong>Jinius Café</strong>
+
+              <span class="mini-note">Sunsoaked Dawes Point brunch with viral fig toast.</span>
+
+            </a>
+
+            <a class="blog-link" href="ap-bakery.html">
+
+              <strong>AP Bakery</strong>
+
+              <span class="mini-note">Buttery pastries, great bread, calm morning energy.</span>
+
+            </a>
+
+            <a class="blog-link" href="speedos-cafe.html">
+
+              <strong>Speedos Café</strong>
+
+              <span class="mini-note">Beachside brunch and Bondi-style slow living.</span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+ 
+
+  <footer>© 2026 Mandy Cao · Built as a mini multi-page food blog</footer>
+
+</body>
+
+</html>
