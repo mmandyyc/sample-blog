@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jinius Café | Mandy's Food Blog</title>
+
+  <style>
+
+    :root {
+
+      --bg: #f7f4ef;
+
+      --paper: #ffffff;
+
+      --ink: #2b2b2b;
+
+      --muted: #6e6a63;
+
+      --accent: #ff7a45;
+
+      --line: #ece6de;
+
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+
+      margin: 0;
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      color: var(--ink);
+
+      background: linear-gradient(180deg, #fffaf6, var(--bg));
+
+    }
+
+    header.hero-header {
+
+      background: linear-gradient(90deg, var(--accent), #ffb190);
+
+      color: white;
+
+      padding: 34px 20px;
+
+      text-align: center;
+
+    }
+
+    nav.topnav {
+
+      position: sticky;
+
+      top: 0;
+
+      background: rgba(34,34,34,0.96);
+
+      padding: 12px 16px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 24px;
+
+    }
+
+    nav.topnav a {
+
+      text-decoration: none;
+
+      color: white;
+
+      font-weight: 600;
+
+    }
+
+    .container {
+
+      max-width: 1180px;
+
+      margin: 0 auto;
+
+      padding: 26px 16px 40px;
+
+    }
+
+    .grid {
+
+      display: grid;
+
+      grid-template-columns: 2.2fr 1fr;
+
+      gap: 24px;
+
+    }
+
+    @media (max-width: 900px) {
+
+      .grid { grid-template-columns: 1fr; }
+
+    }
+
+    .card, .sidebar {
+
+      background: white;
+
+      border: 1px solid var(--line);
+
+      border-radius: 18px;
+
+      box-shadow: var(--shadow);
+
+    }
+
+    .article { padding: 24px; }
+
+    .sidebar { padding: 22px; height: fit-content; }
+
+    .hero-img {
+
+      width: 100%;
+
+      border-radius: 16px;
+
+      margin: 14px 0 18px;
+
+      aspect-ratio: 16 / 9;
+
+      object-fit: cover;
+
+    }
+
+    .kicker {
+
+      display: inline-block;
+
+      background: #fff0ea;
+
+      color: #b34a1d;
+
+      border: 1px solid #ffd9c7;
+
+      border-radius: 999px;
+
+      padding: 6px 12px;
+
+      font-size: 0.85rem;
+
+      font-weight: 700;
+
+    }
+
+    h2 { margin: 12px 0 8px; font-size: 2rem; }
+
+    .lede { color: var(--muted); }
+
+    p { line-height: 1.75; }
+
+    .rating { color: #ff9b21; font-size: 1.1rem; }
+
+    .section { margin-top: 24px; padding-top: 10px; border-top: 1px solid var(--line); }
+
+    .gallery {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+      gap: 12px;
+
+      margin-top: 14px;
+
+    }
+
+    .gallery img {
+
+      width: 100%;
+
+      border-radius: 12px;
+
+      aspect-ratio: 4/3;
+
+      object-fit: cover;
+
+    }
+
+    .blog-links {
+
+      display: grid;
+
+      gap: 10px;
+
+      margin-top: 10px;
+
+    }
+
+    .blog-link {
+
+      display: block;
+
+      text-decoration: none;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      border: 1px solid var(--line);
+
+      background: #fcfbf9;
+
+    }
+
+    .blog-link strong { display: block; margin-bottom: 4px; }
+
+    .mini-note { color: var(--muted); font-size: 0.92rem; line-height: 1.5; }
+
+    .note-box {
+
+      background: #fff8f4;
+
+      border: 1px solid #ffe0d1;
+
+      border-radius: 14px;
+
+      padding: 14px;
+
+      color: #72432e;
+
+    }
+
+    .back-home {
+
+      display: inline-block;
+
+      margin-top: 12px;
+
+      color: #9b4e26;
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 28px 16px 40px;
+
+      color: var(--muted);
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header class="hero-header">
+
+    <h1>Mandy’s Food Blog 🍽️</h1>
+
+    <p>Clickable café guides with photos and full blog pages</p>
+
+  </header>
+
+ 
+
+  <nav class="topnav">
+
+    <a href="index.html">Home</a>
+
+    <a href="jinius.html">Jinius</a>
+
+    <a href="ap-bakery.html">AP Bakery</a>
+
+    <a href="speedos-cafe.html">Speedos</a>
+
+    <a href="single-o.html">Single O</a>
+
+  </nav>
+
+ 
+
+  <div class="container">
+
+    <div class="grid">
+
+      <main class="card article">
+
+        <span class="kicker">Sydney Brunch Find</span>
+
+        <h2>Jinius Café, Sydney: The Brunch Spot Everyone’s Talking About 🍞✨</h2>
+
+        <p class="lede">A sun-soaked Dawes Point brunch spot with viral fig toast, Korean-influenced pastries and major slow-morning energy.</p>
+
+        <div class="rating">★★★★★</div>
+
+ 
+
+        <img class="hero-img" src="https://cdn.broadsheet.com.au/images/2026/04/13/Jinius_Yusuke_Oba_April_2026_Low_32-ef621b470a.webp" alt="Jinius Café hero image">
+
+ 
+
+        <p>If you’ve been scrolling TikTok lately, chances are Jinius has already popped up on your feed—and for good reason. Tucked away in Dawes Point near the Harbour Bridge, this sun-soaked café is quickly becoming one of Sydney’s most talked-about brunch destinations.</p>
+
+ 
+
+        <p>TikTok reviewers can’t get enough of the atmosphere. Think floor-to-ceiling windows, soft natural light, and that “slow morning” energy that makes you want to linger over coffee. The space feels polished yet relaxed—perfect for dates, catch-ups, or solo brunch content creation.</p>
+
+ 
+
+        <p>Let’s talk food—the real reason people queue. The fig French toast is easily the star of the show: fluffy, cloud-like and absolutely worth ordering. The hojicha fig toast feels more elevated and artistic, with earthy notes balanced by sweetness. Even the banana bread with kombu butter sounds simple until that hit of umami changes the whole thing.</p>
+
+ 
+
+        <p>Behind the scenes, Jinius leans hard into pastry craftsmanship: airy sourdough, croissants and milk cream doughnuts, all with subtle Korean influences. Smooth cappuccinos, rich hot chocolate and house-made teas complete the picture.</p>
+
+ 
+
+        <p>One reality check: this is not a quick coffee run. Expect a wait, and expect to settle in. But if you come with time, Jinius delivers a full brunch moment that absolutely earns the hype.</p>
+
+ 
+
+        <section class="section">
+
+          <h3>📸 Photo Highlights</h3>
+
+          <div class="gallery">
+
+            <img src="https://cdn.broadsheet.com.au/images/2026/04/13/Jinius_Yusuke_Oba_April_2026_Low_9-18daa39971.webp" alt="Jinius photo 1">
+
+            <img src="https://cdn.broadsheet.com.au/images/2026/04/13/Jinius_Yusuke_Oba_April_2026_Low_16-00e7deb46a.webp" alt="Jinius photo 2">
+
+            <img src="https://cdn.broadsheet.com.au/images/2026/04/13/Jinius_Yusuke_Oba_April_2026_Low_19-0850a35cc2.webp" alt="Jinius photo 3">
+
+          </div>
+
+        </section>
+
+ 
+
+        <a class="back-home" href="index.html">← Back to all blogs</a>
+
+      </main>
+
+ 
+
+      <aside class="sidebar">
+
+        <h3>📍 Location</h3>
+
+        <p>Dawes Point, Sydney</p>
+
+ 
+
+        <div class="note-box">
+
+          <strong>Why go:</strong>
+
+          <div class="mini-note" style="margin-top:8px; color:#72432e;">
+
+            Best for a slower brunch date, solo content day, or when you want one truly standout dish and a beautiful room to enjoy it in.
+
+          </div>
+
+        </div>
+
+ 
+
+        <div class="section">
+
+          <h3>🔥 Read Next</h3>
+
+          <div class="blog-links">
+
+            <a class="blog-link" href="ap-bakery.html">
+
+              <strong>AP Bakery</strong>
+
+              <span class="mini-note">Buttery pastries, great bread, calm morning energy.</span>
+
+            </a>
+
+            <a class="blog-link" href="speedos-cafe.html">
+
+              <strong>Speedos Café</strong>
+
+              <span class="mini-note">Beachside brunch and Bondi-style slow living.</span>
+
+            </a>
+
+            <a class="blog-link" href="single-o.html">
+
+              <strong>Single O</strong>
+
+              <span class="mini-note">Serious coffee, smart brunch and buzzy Surry Hills vibes.</span>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+ 
+
+  <footer>© 2026 Mandy Cao · Built as a mini multi-page food blog</footer>
+
+</body>
+
+</html>
+
